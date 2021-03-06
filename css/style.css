@@ -172,7 +172,27 @@ color: #9F9F9F;
 .product_blok {
 	width: 360px;
     height: 580px;
-	position: relative;/*__Чтоб "add cart" появлялась поверх__*/
+	margin-bottom: 48px;
+	
+	/*__Чтоб "add cart" появлялась поверх__*/
+	/*_product_blok = РОДИТЕЛЬ_*/
+	position: relative;
+	
+}
+
+/*тень при наведении мышкой*/
+.product_blok:hover{
+	box-shadow: 0 6px 9px rgba(0,0,0,0.20);
+}
+
+/*Курсор на картинку = увидят "add to Cart"*/
+.product_blok:hover .product_add{
+	display: block;
+	}
+
+/*Курсор на картинку = Картинка темнеет*/
+.product_blok:hover .product_blok_img{
+	filter: brightness(40%);
 }
 
 .product_blok_text {
@@ -235,4 +255,11 @@ color: #F16D7F;
 	left: 111px;
 	text-decoration: none;
 	
+}
+
+/*__ЭФфеты при наведении на кнопку "Add to Cart"__*/
+.product_add:hover {
+	box-shadow: 0 0 20px #FFF;
+	font-size: 19px;
+	border-radius: 5px;
 }
