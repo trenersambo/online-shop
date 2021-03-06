@@ -263,3 +263,10 @@ color: #F16D7F;
 	font-size: 19px;
 	border-radius: 5px;
 }
+
+/*_6 картинок = в 2строки_*/
+.product_blok_all {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
