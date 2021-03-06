@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.center {
+	/*____NEW: задает центровку блокам____*/
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.header {
+    background: #222222;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__search {
+    margin-left: 41px;
+}
+
+.header__icons:not(:last-child) {
+    margin-right: 33px;
+}
+
+.promo {
+    background: #F1E4E6;
+    display: flex;
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+}
+
+.promo__img {
+    width: 50%;
+}
+
+.promo__photo {
+    width: 100%;
+}
+
+.promo__h1 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.promo__h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+
+.promo__h2_select {
+    color: #F16D7F;
+}
+
+.promo__text {
+    padding-top: 16%;
+}
+
+.promo__content {
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}
+
+.sale {
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+.sale__item {
+    height: 260px;
+    width: 360px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sale__item_1 {
+    background-image: url(../img/Group\ 36.jpg);
+	background-repeat: no-repeat;
+}
+
+.sale__item_2 {
+    background-image: url(../img/Group\ 37.jpg);
+ background-repeat: no-repeat;
+}
+
+.sale__item_3 {
+    background-image: url(../img/Group\ 38.jpg);
+	background-repeat: no-repeat;
+}
+
+.sale__top {
+ display: flex;
+justify-content: space-between;
+}
+
+.sale__bottom {
+    background-image: url(../img/Group\ 39.jpg);
+	background-repeat: no-repeat;
+    height: 180px;
+    background-position: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sale__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.sale__heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #F16D7F;
+}
+.fetured {
+    display: flex;/* центрую текст */
+    flex-direction: column;
+    align-items: center;
+}
+
+.fetured_top {
+font-size: 30px;
+line-height: 36px;
+color: #222222;
+}
+
+.fetured_bottom {
+font-size: 14px;
+line-height: 17px;
+color: #9F9F9F;
+	margin-top: 6px;
+	margin-bottom: 48px;
+}
