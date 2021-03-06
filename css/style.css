@@ -172,6 +172,7 @@ color: #9F9F9F;
 .product_blok {
 	width: 360px;
     height: 580px;
+	position: relative;/*__Чтоб "add cart" появлялась поверх__*/
 }
 
 .product_blok_text {
@@ -202,4 +203,36 @@ text-transform: uppercase;
 line-height: 20px;
 color: #F16D7F;
 
+}
+
+
+
+
+
+.product_blok_img {
+	width: 100%;/*если вдруг img будет другого размера*/
+}
+
+.product_add {
+	font-size: 14px;
+	
+	color: #DF1717;
+	width: 138px;
+	height: 43px;
+	line-height: 43px;/*__Figma: 17px__ 43рх: центрую посредине__*/
+	border: 1px solid #DF1717;
+	text-align: center;
+	
+	/*display: block;__ Чтоб рамка была в этом строчном элементе__*/
+	display: none;/*_Чтоб увидеть при наведении hover_*/
+	
+	
+	
+	/*__Чтоб "add cart" появлялась поверх__*/
+	/*___Завязана на родителе product_blok через relative*/
+	position: absolute;
+	top: 188px;
+	left: 111px;
+	text-decoration: none;
+	
 }
