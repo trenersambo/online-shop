@@ -1,0 +1,13 @@
+1_proverka 6-03-21 9-27h
+2__proverka 6-03-21 10-05h
+
+******
+
+cd d:/pro-verstka
+
+1). git add -A
+2). git commit -am 'test'
+3). git push
+
+
+
