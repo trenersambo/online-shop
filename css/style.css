@@ -238,8 +238,10 @@ color: #F16D7F;
 	
 	color: #DF1717;
 	width: 138px;
-	height: 43px;
+	
+	height: 43px;/*_Размер 43рх = line-height, чтоб текст встал по середине кнопки_*/
 	line-height: 43px;/*__Figma: 17px__ 43рх: центрую посредине__*/
+	
 	border: 1px solid #DF1717;
 	text-align: center;
 	
@@ -270,3 +272,29 @@ color: #F16D7F;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+
+
+.button_browse_all {
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 95px;
+	font-size: 16px;
+	
+	line-height: 47px;
+	height: 47px;
+	
+	color: #F26376;
+	 
+	border: 1px solid #FF6A6A;
+	width: 211px;
+	
+}
+
+.button_browse {
+	text-decoration: none;
+	color: #F26376;
+	
+}
+
+
