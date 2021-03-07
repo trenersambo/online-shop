@@ -284,7 +284,6 @@ color: #F16D7F;
 	line-height: 47px;
 	height: 47px;
 	
-	color: #F26376;
 	 
 	border: 1px solid #FF6A6A;
 	width: 211px;
@@ -295,7 +294,20 @@ color: #F16D7F;
 .button_browse {
 	text-decoration: none;
 	color: #F26376;
+}
+
+ /*стиль кнопки 'Browse All..'при наведении курсора*/
+.button_browse_all:hover{
+	background-color: #F16D7F;
+	border: 1px solid #FF6A6A;
+	color: #FFFFFF;
 	
 }
+
+/*стиль кнопки 'Browse All..'при наведении курсора*/
+.button_browse_all:hover .button_browse{
+color: #FFFFFF;	
+}
+
 
 
