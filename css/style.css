@@ -173,14 +173,15 @@ color: #9F9F9F;
 	width: 360px;
     height: 580px;
 	margin-bottom: 48px;
+	background: #F8F8F8;
 	
-	/*__Чтоб "add cart" появлялась поверх__*/
+	/*__Чтоб карточка "add cart" появлялась поверх__*/
 	/*_product_blok = РОДИТЕЛЬ_*/
 	position: relative;
 	
 }
 
-/*тень при наведении мышкой*/
+/*ТЕНЬ при наведении мышкой*/
 .product_blok:hover{
 	box-shadow: 0 6px 9px rgba(0,0,0,0.20);
 }
@@ -189,6 +190,8 @@ color: #9F9F9F;
 .product_blok:hover .product_add{
 	display: block;
 	}
+
+
 
 /*Курсор на картинку = Картинка темнеет*/
 .product_blok:hover .product_blok_img{
@@ -245,6 +248,9 @@ color: #F16D7F;
 	border: 1px solid #DF1717;
 	text-align: center;
 	
+	padding-left: 12px;/*отступ от corzina.svg*/
+	box-sizing: border-box;/*чтоб границы не разехались*/
+	
 	/*display: block;__ Чтоб рамка была в этом строчном элементе__*/
 	display: none;/*_Чтоб увидеть при наведении hover_*/
 	
@@ -257,13 +263,30 @@ color: #F16D7F;
 	left: 111px;
 	text-decoration: none;
 	
+
 }
+
+/*_____тест наа появление КОРЗИНЫ_____*/
+.product_add::before{
+	
+content: "";
+position: absolute;
+left: 7px;
+top: 8px;
+width: 100%;
+height: 100%;
+background: url("../img/corzina-red.svg");
+background-repeat: no-repeat;
+
+	}
 
 /*__ЭФфеты при наведении на кнопку "Add to Cart"__*/
 .product_add:hover {
 	box-shadow: 0 0 20px #FFF;
-	font-size: 19px;
-	border-radius: 5px;
+	font-size: 16px;
+	border-radius: 3px;/*скургление углаов в 'AddToCart'*/
+	padding-left: 20px;/*отступ от corzina.svg*/
+	box-sizing: border-box;/*чтоб границы не разехались*/
 }
 
 /*_6 картинок = в 2строки_*/
@@ -311,3 +334,61 @@ color: #FFFFFF;
 
 
 
+
+/*футер 1-й уровень*/
+.footer_top {
+	height: 341px;
+	background-color:#222224; 
+}
+
+/*Блок стилей для ТРЕХ блоков:авто+%+корона*/
+.footer_top_one {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+
+/*Стили для блока 'МАШИНА'(подвал-верхний)*/
+.footer_top_free {
+	height: 339px;
+	width: 360px;
+	/*border: 1px solid #000;*/
+}
+
+.free_text_top {
+	font-size: 20px;
+	line-height: 24px;
+	color: #FBFBFB;
+	
+	text-align: center;
+	margin-top: 28px;
+}
+
+.free_text_bottom {
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #FBFBFB;
+	
+margin-top: 16px;
+}
+
+.free_img {
+	text-align: center;
+	margin-top: 103px;
+}
+
+/*блок с ПРОЦЕНТОМ*/
+.footer_top_sales {
+	height: 339px;
+	width: 360px;
+	/*border: 1px solid #000;*/
+}
+
+/*блок с КОРОНОЙ*/
+.footer_top_quality {
+	height: 339px;
+	width: 360px;
+	/*border: 1px solid #000;*/
+}
