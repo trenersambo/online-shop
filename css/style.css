@@ -542,3 +542,13 @@ box-sizing: border-box;
 .social_link {
 	margin-left: 9px;
 }
+
+
+/*курсор на Иконке соц.сети = смена фона в svg*/
+.soc_link_hover:hover .red-1{
+fill:#F16D7F;	
+}
+
+.soc_link_hover:hover .white-1{
+	fill:#FFFFFF;
+}
