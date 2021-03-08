@@ -460,25 +460,42 @@ color: #222224;
 
 .one_right_form {
 	margin-top: 32px;
+	
+	/*для сведения вместе поля ввода"mail" + кнопка"Subscrib"*/
+	display: flex;
 }
 
 .input-text-form {
-height: 49px;
-width: 356px;
-left: 917px;
-top: 243px;
- border: hidden;
+height: 49px;/*высота поля e-mail*/
+width: 250px;/*длинна поля e-mail*/
+ 
+border: hidden;/*скрыл рамку поля ввода*/
 background-color: #E1E1E1;
-border-radius: 25px;
+border-radius: 25px 0 0 25px;/*чтоб справа не было радиуса = завязка на кнопку*/
 opacity: 0.7;
 
 	/*стиль Placeholder*/
 font-size: 16px;
-padding-left: 22px;
-box-sizing: border-box;
+padding-left: 22px;/*отступ для слова "Enter Your email" */
+box-sizing: border-box;/*не дает padding' ам расширить поле ввода*/
 line-height: 17px;
 display: flex;
 align-items: center;
 color: #010101;
 	
+}
+
+.knopka_subs {
+	/*красная кнопка "Subscribe" */
+	border-radius: 0 25px 25px 0;
+	width: 100px;
+	border: hidden;
+	background-color: #F16D7F;
+	
+	/* стиль слова "Subscribe" внутри кнопки */
+	font-size: 14px;
+	line-height: 17px;
+ 	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
 }
