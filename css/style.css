@@ -407,7 +407,7 @@ margin-top: 16px;
 
 .middle_one_left {
 	width: 450px;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 
 .one_left_img {
@@ -429,7 +429,7 @@ margin-top: 16px;
 
 .middle_one_right {
 	width: 450px;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -498,4 +498,47 @@ color: #010101;
  	align-items: center;
 	text-align: center;
 	color: #FFFFFF;
+}
+
+/*смена цвета от навадения курсора на конпку*/
+.knopka_subs:hover{
+background-color: #E05C6E;	
+}
+
+.left_text_brand {
+ 
+font-size: 16px;
+height: 19px;
+line-height: 19px;
+color: #FBFBFB;
+	
+
+}
+
+.footer_bottom_one {
+height: 80px;
+background-color: #222224;
+display: flex;
+	justify-content: space-between;
+}
+
+
+
+/*центровка 'BrandAllRight..' от верха+слева*/
+.bottom_one_left {
+margin-top: 30px;
+margin-left: 150px;
+box-sizing: border-box;
+}
+
+/*центровка иконок от верха*/
+.bottom_one_right {
+margin-top: 30px;
+box-sizing: border-box;
+	
+}
+
+/*отступы м/у иконками соц.сетей*/
+.social_link {
+	margin-left: 9px;
 }
