@@ -299,19 +299,18 @@ background-repeat: no-repeat;
 
 
 .button_browse_all {
-	text-decoration: none;
-	text-align: center;
+	/*text-decoration: none;
+	text-align: center;*/
 	/*margin-bottom: 95px;*/
-	font-size: 16px;
+	/*font-size: 16px;*/
+	/*line-height: 47px;
+	height: 45px;
+	border: 1px solid #EBEBEB;*/
 	
-	line-height: 47px;
-	height: 47px;
 	
-	 
-	border: 1px solid #FF6A6A;
-	width: 211px;
-	
-	margin: 0 auto 95px auto;/*центровка кнопки*/
+	/*центровка рамки ПАГИНАЦИИ страниц*/
+	margin: 0 auto 95px auto;
+	width: 283px;
 }
 
 .button_browse {
@@ -320,12 +319,12 @@ background-repeat: no-repeat;
 }
 
  /*стиль кнопки 'Browse All..'при наведении курсора*/
-.button_browse_all:hover{
+/*.button_browse_all:hover{
 	background-color: #F16D7F;
 	border: 1px solid #FF6A6A;
 	color: #FFFFFF;
 	
-}
+}*/
 
 /*стиль кнопки 'Browse All..'при наведении курсора*/
 .button_browse_all:hover .button_browse{
@@ -574,7 +573,7 @@ fill:#F16D7F;
 }
 .arrivals_right_text{
 	padding-left: 10px;
-	padding-right: 88;
+	margin-right: 10px;
 	box-sizing: border-box;
 }
 
@@ -587,7 +586,7 @@ fill:#F16D7F;
 /*наведение на слово 'New Arrivals' = смена цвета*/
 .left_text_nolink:hover{
 	color: #F16D7F;
-	font-size: 25px;
+	font-size: 24px;
 line-height: 30px;
 }
 
@@ -606,7 +605,10 @@ line-height: 17px;
 	color: #F16D7F;
 	font-size: 14px;
 line-height: 17px;
-	font-weight: 600;
+	 
+	
+	 text-shadow:  0 0 .45px #F16D7F; 
+
 }
 
 
@@ -693,3 +695,31 @@ color: #6F6E6E;
 .arrow_vniz_all {
 	margin-top: 8px;
 }
+
+.pagination {
+	text-align: center;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 283px;
+    height: 43px;
+    border: 1px solid #EBEBEB;
+}
+
+/*стиль для ПАГИНАЦИИ (счетчик внизу страницы)*/
+.link_pag {
+	text-decoration: none;
+  padding: 0 5px 0 5px;
+  box-sizing: border-box;
+  font-weight: 300;
+font-size: 19px;
+line-height: 19px;
+color: #6E6C6C;
+	opacity: 0.65;
+}
+.link_pag:hover {
+	color: #F16D7F;
+	font-weight: 600;
+}
+
