@@ -299,13 +299,13 @@ background-repeat: no-repeat;
 
 
 .button_browse_all {
-	/*text-decoration: none;
-	text-align: center;*/
-	/*margin-bottom: 95px;*/
-	/*font-size: 16px;*/
-	/*line-height: 47px;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 95px;
+	font-size: 16px;
+	line-height: 47px;
 	height: 45px;
-	border: 1px solid #EBEBEB;*/
+	border: 1px solid #EBEBEB;
 	
 	
 	/*центровка рамки ПАГИНАЦИИ страниц*/
@@ -319,12 +319,12 @@ background-repeat: no-repeat;
 }
 
  /*стиль кнопки 'Browse All..'при наведении курсора*/
-/*.button_browse_all:hover{
+ .button_browse_all:hover{
 	background-color: #F16D7F;
 	border: 1px solid #FF6A6A;
 	color: #FFFFFF;
 	
-}*/
+} 
 
 /*стиль кнопки 'Browse All..'при наведении курсора*/
 .button_browse_all:hover .button_browse{
@@ -696,7 +696,11 @@ color: #6F6E6E;
 	margin-top: 8px;
 }
 
+/* Стили для блока ПАГИНАЦИИ в catalog */
 .pagination {
+	/*конпка ПАГИНАЦИИ встает по центру*/
+	margin: 0px auto 95px auto;
+	
 	text-align: center;
 	display: flex;
     justify-content: space-between;
@@ -722,4 +726,6 @@ color: #6E6C6C;
 	color: #F16D7F;
 	font-weight: 600;
 }
+
+
 
