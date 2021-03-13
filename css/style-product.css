@@ -42,12 +42,25 @@ body {
 	height: 777px;
 }
 
+/*стиль блока с ТеткойНаСтуле*/
+.tovar_promo {
+    background: #F7F7F7;
+    display: flex;
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+	height: 777px;
+	
+	/*Центровка "Влево" "Вправо" "теткаНастуле"*/
+	align-items:center;
+}
+
 .promo__img {
-    width: 50%;
+	margin: 0 auto;
+    /*width: 50%;*/
 }
 
 .promo__photo {
-    width: 100%;
+    /*width: 90%;*/
 }
 
 .promo__h1 {
@@ -735,3 +748,36 @@ color: #6E6C6C;
 .product_all {
 	height: 610px;
 }
+
+/*Стиль для серого квадрата со стрелкой ВЛЕВО*/
+.arrow_back_left {
+	width: 47px;
+	height: 47px;
+	background: rgba(42, 42, 42, 0.15);
+	/*border: 1px solid #000;*/
+	
+}
+
+/* СТРЕЛКА ВЛЕВО: смена цвета при наведении*/
+.arrow_back_left:hover .arrow_svg_hover,
+.arrow_back_right:hover .arrow_svg_hover{
+	fill:#EF5B70;
+}
+
+/*Блок СТРЕЛКА ВЛЕВО: позиция посередине*/
+.arrow_left_svg {
+	margin: 12px 0 0 16px;
+}
+
+/*Стиль для серого квадрата со стрелкой ВПРАВО*/
+.arrow_back_right {
+	width: 47px;
+	height: 47px;
+	background: rgba(42, 42, 42, 0.15);
+	/*border: 1px solid #000;*/
+}
+/*Блок СТРЕЛКА ВПРАВО: позиция посередине*/
+.arrow_right_svg {
+	margin: 12px 0 0 16px;
+}
+
