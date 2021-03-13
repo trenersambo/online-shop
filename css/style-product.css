@@ -663,21 +663,21 @@ color: #EF5B70;
 
 
 .filter_right_text {
-margin-right: 15px;	
+margin-right: 20px;	
 font-size: 15px;
 line-height: 20px;
 color: #6F6E6E;	
 }
 
-.filter_top_right{
+/*.filter_top_right{
 	display: flex;
 	margin-left: 310px;
-}
+}*/
 
-.filter_right_link{
+/*.filter_right_link{
 	display: flex;
 	margin-left: 15px;
-}
+}*/
 
 /*Курсор в области слов Trending/size/price = смена цвета слова*/
 .filter_right_link:hover .filter_right_text{
@@ -702,7 +702,7 @@ color: #6F6E6E;
 
 
 
-.filter_text_nolink {
+.choose_filter_nolink {
 	text-decoration: none;
 }
 
@@ -789,7 +789,7 @@ color: #6E6C6C;
 	margin: 0 auto;
 	height: 350px;
 	width: 600px;
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -803,7 +803,10 @@ color: #6E6C6C;
 	margin: 0 auto;
 	height: 200px;
 	width: 600px;
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .prod_info_hr {
@@ -869,3 +872,80 @@ color: #EF5B70;
 }
 
 
+
+.info_bottom_vkorzinu {
+	margin-top: 35px;
+	
+}
+
+.info_bottom_choose {
+	 margin-top: 60px;
+	/*width: 450px; */
+	/*border: 1px solid #117705; */
+}
+
+.choose_filter {
+	display: flex;
+	
+}
+
+
+/*стиль для наименований фильтров*/
+.filter_choose_link {
+	font-size: 14px;
+line-height: 17px;
+color: #6F6E6E;
+}
+
+/*расстояние только м/у словами ChooseColor и ShooseSize, кроме Quantity*/
+.filter_choose_link:not(:last-child){
+	margin-right: 22px;
+	/*Если padding-left, то курсор везде показывает сплошную ссылку */
+}
+
+
+/*Курсор в области слов ChooseColor ShooseSize Quantity = смена цвета слова*/
+.filter_choose_link:hover .text_filter{
+	color: #EF5B70;
+}
+
+/*Курсор в области слов ChooseColor ShooseSize Quantity = смена цвета стрелки*/
+.filter_choose_link:hover .strelka_vniz_red{
+	fill:#EF5B70;
+}
+
+
+
+.product_add_box {
+width: 210px;
+	height: 50px;
+	border: 1px solid #FF6A6A;
+	margin: 0 auto;
+	
+	/*Чтоб Корзина svg и "Add to Cart" не были в столбик*/
+	display: flex;
+	
+	
+}
+
+
+
+.product__add {
+	/* стиль для слов "Add to Cart" */
+	font-size: 18px;
+	height: 19px;	
+	line-height: 19px;
+	color: #F26376;
+}
+
+/*Расположил КОРЗИНА SVG в карточке 'Add to Cart' */
+.product__cart {
+	padding-left: 21px;
+	padding-top: 14px;
+}
+
+/*Двигаю слово 'Add to Card'*/
+.add_box_text {
+	padding-top: 15px;
+    padding-left: 20px;
+}
