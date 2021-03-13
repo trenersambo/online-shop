@@ -35,32 +35,18 @@ body {
 }
 
 .promo {
-    background: #F7F7F7;
+    background: #F1E4E6;
     display: flex;
     padding-left: calc(50% - 800px);
     padding-right: calc(50% - 800px);
-	height: 777px;
-}
-
-/*стиль блока с ТеткойНаСтуле*/
-.tovar_promo {
-    background: #F7F7F7;
-    display: flex;
-    padding-left: calc(50% - 800px);
-    padding-right: calc(50% - 800px);
-	height: 777px;
-	
-	/*Центровка "Влево" "Вправо" "теткаНастуле"*/
-	align-items:center;
 }
 
 .promo__img {
-	margin: 0 auto;
-    /*width: 50%;*/
+    width: 50%;
 }
 
 .promo__photo {
-    /*width: 90%;*/
+    width: 100%;
 }
 
 .promo__h1 {
@@ -308,8 +294,6 @@ background-repeat: no-repeat;
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-	
-	margin-top: 130px;
 }
 
 
@@ -665,21 +649,21 @@ color: #EF5B70;
 
 
 .filter_right_text {
-margin-right: 20px;	
+margin-right: 15px;	
 font-size: 15px;
 line-height: 20px;
 color: #6F6E6E;	
 }
 
-/*.filter_top_right{
+.filter_top_right{
 	display: flex;
 	margin-left: 310px;
-}*/
+}
 
-/*.filter_right_link{
+.filter_right_link{
 	display: flex;
 	margin-left: 15px;
-}*/
+}
 
 /*Курсор в области слов Trending/size/price = смена цвета слова*/
 .filter_right_link:hover .filter_right_text{
@@ -704,7 +688,7 @@ color: #6F6E6E;
 
 
 
-.choose_filter_nolink {
+.filter_text_nolink {
 	text-decoration: none;
 }
 
@@ -745,223 +729,3 @@ color: #6E6C6C;
 
 
 
-
-/*блок между ТеткаНаСтуле и 3-мя_КарточкамиТовара*/
-.product_all {
-	height: 610px;
-	
-	/*для смещения вверх дочернего блока prod_info_sdvig*/
-	position: relative;
-}
-
-/*Стиль для серого квадрата со стрелкой ВЛЕВО*/
-.arrow_back_left {
-	width: 47px;
-	height: 47px;
-	background: rgba(42, 42, 42, 0.15);
-	/*border: 1px solid #000;*/
-	
-}
-
-/* СТРЕЛКА ВЛЕВО: смена цвета при наведении*/
-.arrow_back_left:hover .arrow_svg_hover,
-.arrow_back_right:hover .arrow_svg_hover{
-	fill:#EF5B70;
-}
-
-/*Блок СТРЕЛКА ВЛЕВО: позиция посередине*/
-.arrow_left_svg {
-	margin: 12px 0 0 16px;
-}
-
-/*Стиль для серого квадрата со стрелкой ВПРАВО*/
-.arrow_back_right {
-	width: 47px;
-	height: 47px;
-	background: rgba(42, 42, 42, 0.15);
-	/*border: 1px solid #000;*/
-}
-/*Блок СТРЕЛКА ВПРАВО: позиция посередине*/
-.arrow_right_svg {
-	margin: 12px 0 0 16px;
-}
-
-
-
-
-/*Блок для 4-х текстовых блоков*/
-.prod_info_top {
-	margin: 0 auto;
-	height: 350px;
-	width: 600px;
-	/*border: 1px solid #000;*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.product_info {
-	border: 1px solid #EAEAEA;
-	
-}
-
-.prod_info_bottom {
-	margin: 0 auto;
-	height: 200px;
-	width: 600px;
-	/*border: 1px solid #000;*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.prod_info_hr {
-	margin: 2px auto;
-	width: 600px;
-	border: 1px solid #EAEAEA;
-}
-
-/*стиль для HR в блоке prod_info_top */
-.top_text_hr {
-	width: 63px;
-	height: 3px;
-	background: #EF5B70;
-}
-
-/*стиль для Текст-1 в блоке prod_info_top */
-.info_top_text_one {
-font-weight: 300;
-font-size: 16px;
-line-height: 17px;
-color: #F16D7F;
-	margin-top: 60px;
-	margin-bottom: 14px;
-}
-.info_top_text_one_link {
-	font-weight: 300;
-font-size: 16px;
-line-height: 17px;
-color: #F16D7F;
-	/*margin-top: 60px;
-	margin-bottom: 14px;*/
-	text-decoration: none;
-}
-
-/*стиль для Текст-2 в блоке prod_info_top */
-.info_top_text_two {
-	font-family: Lato;
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 22px;
-color: #4D4D4D;
-	margin-top: 12px;
-	margin-bottom: 50px;
-}
-
-/*стиль для Текст-3 в блоке prod_info_top */
-.info_top_text_three {
-font-weight: 300;
-font-size: 16px;
-line-height: 17px;
-text-align: center;
-color: #5E5E5E;
-margin-bottom: 35px;
-}
-
-/*стиль для Текст-ЦЕНА в блоке prod_info_top */
-.info_top_text_price {
-	font-weight: 300;
-font-size: 26px;
-line-height: 29px;
-color: #EF5B70;
-}
-
-
-
-.info_bottom_vkorzinu {
-	margin-top: 50px;
-	
-}
-
-.info_bottom_choose {
-	 margin-top: 60px;
-	
-	/*width: 450px; */
-	/*border: 1px solid #117705; */
-}
-
-.choose_filter {
-	display: flex;
-	
-}
-
-
-/*стиль для наименований фильтров*/
-.filter_choose_link {
-	font-size: 14px;
-line-height: 17px;
-color: #6F6E6E;
-}
-
-/*расстояние только м/у словами ChooseColor и ShooseSize, кроме Quantity*/
-.filter_choose_link:not(:last-child){
-	margin-right: 22px;
-	/*Если padding-left, то курсор везде показывает сплошную ссылку */
-}
-
-
-/*Курсор в области слов ChooseColor ShooseSize Quantity = смена цвета слова*/
-.filter_choose_link:hover .text_filter{
-	color: #EF5B70;
-}
-
-/*Курсор в области слов ChooseColor ShooseSize Quantity = смена цвета стрелки*/
-.filter_choose_link:hover .strelka_vniz_red{
-	fill:#EF5B70;
-}
-
-
-
-.product_add_box {
-width: 210px;
-	height: 50px;
-	border: 1px solid #FF6A6A;
-	margin: 0 auto;
-	
-	/*Чтоб Корзина svg и "Add to Cart" не были в столбик*/
-	display: flex;
-	
-	
-}
-
-
-
-.product__add {
-	/* стиль для слов "Add to Cart" */
-	font-size: 18px;
-	height: 19px;	
-	line-height: 19px;
-	color: #F26376;
-}
-
-/*Расположил КОРЗИНА SVG в карточке 'Add to Cart' */
-.product__cart {
-	padding-left: 21px;
-	padding-top: 14px;
-}
-
-/*Двигаю слово 'Add to Card'*/
-.add_box_text {
-	padding-top: 15px;
-    padding-left: 20px;
-}
-
-/*Надвигаю Блок поверх других + сдвиг вверх*/
-.prod_info_sdvig {
-	position: absolute;
-	background: #FFFFFF;
-	width: 1140px;
-	height: 600px;
-	top: -60px;
-}
