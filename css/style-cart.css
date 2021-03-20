@@ -1124,7 +1124,7 @@ color: #222222;
 
 .adress {
 	height: 300px;
-	border: 1px solid #2431C5;
+	/*border: 1px solid #2431C5;*/
 }
 
 /*стиль АДРЕСА ДОСТАВКИ*/
@@ -1150,6 +1150,10 @@ form input[type=submit]:active {
 	background: #F16D7F;
 	color: #FFFFFF;
 }
+
+form input[type=submit]:hover {
+    box-shadow: 1px 2px 5px 1px rgb(0 0 0 / 20%);
+}
 .submit_text {
 	font-weight: 300;
 	font-size: 11px;
@@ -1158,3 +1162,85 @@ form input[type=submit]:active {
 	color: #4A4A4A;
 	margin-top: 24px;
 	}
+
+.total {
+	width: 360px;
+	height: 215px;
+	/*border: 1px solid #000;*/
+	background: #F5F3F3;
+	margin-top: 30px;
+}
+
+/*стиль слов SUBTOTAL*/
+.subtot {
+font-size: 11px;
+line-height: 13px;
+color: #4A4A4A;
+text-align: right;
+
+box-sizing: border-box;
+padding-top: 40px;
+padding-right: 35px;
+}
+
+
+/*отступ ценника от слова SUB TOTAL*/
+.sub_price {
+	margin-left: 15px;
+}
+
+/*стиль для слов GRAND TOTAL*/
+.grandtot {
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #222222;
+text-align: right;
+	
+box-sizing: border-box;
+padding-top: 12px;
+padding-right: 37px;
+
+	margin-bottom: 20px;
+}
+
+.grand_price {
+	margin-left: 15px;
+	color: #F16D7F;
+}
+
+.total_hr {
+	width: 275px;
+	height: 1px;
+	margin: 0 auto;
+	
+}
+
+.submit_p {
+	box-sizing: border-box;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/*Стиль кнопки PROCEED TO CHECKOUT */
+.button_check {
+	width: 273px;
+	height: 50px;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;;
+	background-color:#F16D7F;
+}
+
+.button_check:active {
+	color: #222222;
+	background-color:#F27A8A;
+}
+.button_check:hover {
+	box-shadow: 1px 2px 5px 1px rgb(0 0 0 / 20%);
+}
+
+
+ 
+
