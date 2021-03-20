@@ -407,7 +407,7 @@ summary::-webkit-details-marker {
 
 .product_blok {
   width: 360px;
-  height: 580px;
+  /*height: 580px;*/
   margin-bottom: 48px;
   background: #F8F8F8;
   /*__Чтоб карточка "add cart" появлялась поверх__*/
@@ -836,15 +836,15 @@ summary::-webkit-details-marker {
 
 .left_text_nolink {
   text-decoration: none;
-  color: #636363;
+  color: #F16D7F
   /*наведение на слово 'New Arrivals' = смена цвета*/
   /*убрать подчерк.ссылки + цвет текста*/
 }
 
 .left_text_nolink:hover {
-  color: #F16D7F;
+  /*color: #F16D7F;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 30px;*/
 }
 
 .right_text_nolink {
@@ -854,6 +854,7 @@ summary::-webkit-details-marker {
   font-size: 14px;
   line-height: 17px;
   /*наведение на слова 'Home/Men/New Arrivals' = смена цвета*/
+	
 }
 
 .right_text_nolink:hover {

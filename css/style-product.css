@@ -308,8 +308,8 @@ background-repeat: no-repeat;
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-	
 	margin-top: 130px;
+	margin-bottom: 130px;
 }
 
 
@@ -596,14 +596,14 @@ fill:#F16D7F;
 /*убрать подчерк.ссылки + цвет текста*/
 .left_text_nolink{
 	text-decoration: none;
-	color: #636363;
+	color: #F16D7F;
 }
 
 /*наведение на слово 'New Arrivals' = смена цвета*/
 .left_text_nolink:hover{
-	color: #F16D7F;
+	/*color: #F16D7F;
 	font-size: 24px;
-line-height: 30px;
+line-height: 30px;*/
 }
 
 /*убрать подчерк.ссылки + цвет текста*/
@@ -881,7 +881,9 @@ color: #EF5B70;
 
 .info_bottom_vkorzinu {
 	margin-top: 50px;
-	
+}
+.info_bottom_vkorzinu:hover{
+	background: #F16D7F;
 }
 
 .info_bottom_choose {
@@ -943,6 +945,11 @@ width: 210px;
 	height: 19px;	
 	line-height: 19px;
 	color: #F26376;
+	text-decoration: none;
+}
+/*смена цвета при наведени на Add toCart*/
+.product__add:hover{
+	color: #FFFFFF;
 }
 
 /*Расположил КОРЗИНА SVG в карточке 'Add to Cart' */
@@ -955,6 +962,7 @@ width: 210px;
 .add_box_text {
 	padding-top: 15px;
     padding-left: 20px;
+	
 }
 
 /*Надвигаю Блок поверх других + сдвиг вверх*/
@@ -964,4 +972,145 @@ width: 210px;
 	width: 1140px;
 	height: 600px;
 	top: -60px;
+}
+
+/*Наведение курсора на Add ToCart=смена цвета svg корзинки*/
+.product__add:hover .svg_white{
+fill: white;	
+}
+
+/*Стили для ТРЕХ ФИЛЬТРОВ*/
+.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  position: relative;
+}
+
+summary {
+  display: block;
+  outline: none;
+  /*отступы для ФИЛЬТРОВ*/
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.sort__summary {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  padding-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.sort__details {
+  padding: 13px 16px 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+   
+  z-index: 1;
+  width: 100%;
+}
+
+.sort__details[open] {
+  background: #FFFFFF;
+ /* -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);*/
+}
+
+.sort__details[open] .sort__summary {
+  color: #F16D7F;
+}
+
+.sort__details[open] path {
+  fill: #F16D7F;
+}
+
+.sort__details-in {
+  margin-top: 16px;
+}
+
+.sort__details-in[open] .sort__heading-in {
+  color: #F16D7F;
+}
+
+.sort__summary-in {
+  border-left: 5px solid #F16D7F;
+}
+
+.sort__heading-in {
+  padding: 8px 0 11px 11px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: block;
+  color: #6F6E6E;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.filter__ul {
+  list-style-type: none;
+  padding-left: 17px;
+  padding-top: 24px;
+}
+
+.sort-checkbox {
+  position: relative
+}
+
+
+/*вот тут я исправил*/
+.sort-checkbox {
+  position: relative;
+  /* выпадающему списку задаем это*/
+}
+
+.sort__ul {
+  position: absolute;
+  /* то что выпадает задаем absolute*/
+  list-style-type: none;
+	
+	/*отступ от заголовка меню*/
+	margin-top: 5px;
+	
+	/*отсутпы внутри менюшки*/
+  padding-left: 14px;
+    padding-top: 10px;
+    padding-right: 14px;
+    padding-bottom: 10px;
+  background: white;
+	
+   /*Тени выпадающего списка*/
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.sort__ul a {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+/*стиль для отступа м/у Чекбокс и словом*/
+#size-XS,
+#size3-XS{
+	margin-right: 6px;
+}
+#size-S,
+#size3-S{
+	margin-right: 6px;
+}
+#size-M,
+#size3-M{
+	margin-right: 6px;
+}
+#size-L,
+#size3-L{
+	margin-right: 6px;
 }
