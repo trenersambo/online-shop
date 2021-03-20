@@ -1000,15 +1000,19 @@ summary::-webkit-details-marker {
 
 
 /*стиль для отступа м/у Чекбокс и словом*/
-#size-XS{
+#size-XS,
+#size3-XS{
 	margin-right: 6px;
 }
-#size-S{
+#size-S,
+#size3-S{
 	margin-right: 6px;
 }
-#size-M{
+#size-M,
+#size3-M{
 	margin-right: 6px;
 }
-#size-L{
+#size-L,
+#size3-L{
 	margin-right: 6px;
 }
