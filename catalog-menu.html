@@ -138,14 +138,14 @@
 
 	<div class="sort">
 			
-		<details class="sort__details">
+		<details class="sort__details sort-checkbox">
 			
 		 
 			
 			<summary class="sort__summary">
 				
 				<span class="sort__summary">
-				TRENDING
+				TRENDING 
 				</span>
 				
 					<svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -154,23 +154,17 @@
 			</summary>
 				
 			
-			<details open class="sort__details-in">
-				
-				<summary class="sort__summary-in">
-					
-					<span class="sort__heading-in">CATEGORY</span>
-					
-				</summary>
-				
+			
+				<!--Выпадающее меню (простенькая форма)-->
 				<ul class="sort__ul">
-					<li> <a href="#"> Accessories</a></li>
-					<li> <a href="#"> Bags</a></li>
-					<li> <a href="#"> Denim</a></li>
-					<li> <a href="#"> Hoodies  </a></li>
+					<li><input type="checkbox">Sambo</li>
+					<li><input type="checkbox">Judo</li>
+					<li><input type="checkbox">BJJ</li>
+					<li> <input type="checkbox">MMA</li>
 					
 				</ul>
 				
-			</details>
+			
 		
 			
 	</details>
@@ -194,12 +188,28 @@
 				
 			
 			
-				
+				<!--Выпадающее меню (доработанная форма)-->
 				<ul class="sort__ul">
-					<li><input type="checkbox"> XS</li>
-					<li><input type="checkbox">L </li>
-					<li><input type="checkbox"> M</li>
-					<li> <input type="checkbox">XXL</li>
+					<li> 
+						<label for="size-XS">
+						<input id="size-XS" type="checkbox">XS
+						</label>
+					</li>
+					<li>
+						<label for="size-S">
+						<input id="size-S" type="checkbox">S
+						</label>
+					</li>
+					<li>
+						<label for="size-M">
+						<input id="size-M" type="checkbox">M
+						</label>
+					</li>
+					<li> 
+						<label for="size-L">
+						<input id="size-L" type="checkbox">L
+						</label>
+					</li>
 					
 				</ul>
 				
@@ -226,24 +236,31 @@
 			</summary>
 				
 			
-			<details open class="sort__details-in">
-				
-				<summary class="sort__summary-in">
-					
-					<span class="sort__heading-in">CATEGORY</span>
-					
-				</summary>
-				
+			<!--Выпадающее меню (доработанная форма)-->
 				<ul class="sort__ul">
-					<li> <a href="#"> Accessories</a></li>
-					<li> <a href="#"> Bags</a></li>
-					<li> <a href="#"> Denim</a></li>
-					<li> <a href="#"> Hoodies  </a></li>
+					<li> 
+						<label for="size-XS">
+						<input id="size-XS" type="checkbox">XS
+						</label>
+					</li>
+					<li>
+						<label for="size-S">
+						<input id="size-S" type="checkbox">S
+						</label>
+					</li>
+					<li>
+						<label for="size-M">
+						<input id="size-M" type="checkbox">M
+						</label>
+					</li>
+					<li> 
+						<label for="size-L">
+						<input id="size-L" type="checkbox">L
+						</label>
+					</li>
 					
 				</ul>
 				
-			</details>
-		
 			
 	</details>
 			
@@ -403,7 +420,7 @@
 		<div class="product_blok">
 			<a href="#">
 				<div class="product_blok_img">
-				<img src="img/man-1.jpg" alt="Image product">
+				<img src="img/Man-1.jpg" alt="Image product">
 				</div>
 			</a>
 			

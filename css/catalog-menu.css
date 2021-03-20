@@ -95,14 +95,14 @@ summary::-webkit-details-marker {
 
 .filter__details[open] {
   background: #FFFFFF;
-  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21); 
 }
 
 .sort__details[open] {
   background: #FFFFFF;
-  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+ /* -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);*/
 }
 
 
@@ -189,9 +189,19 @@ summary::-webkit-details-marker {
   position: absolute;
   /* то что выпадает задаем absolute*/
   list-style-type: none;
-  padding-left: 17px;
-  padding-top: 24px;
+	
+	/*отступ от заголовка меню*/
+	margin-top: 5px;
+	
+	/*отсутпы внутри менюшки*/
+  padding-left: 14px;
+    padding-top: 10px;
+    padding-right: 14px;
+    padding-bottom: 10px;
   background: white;
+	
+   /*Тени выпадающего списка*/
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .sort__ul a {
@@ -987,3 +997,18 @@ summary::-webkit-details-marker {
 }
 
 /*# sourceMappingURL=catalog-menu.css.map */
+
+
+/*стиль для отступа м/у Чекбокс и словом*/
+#size-XS{
+	margin-right: 6px;
+}
+#size-S{
+	margin-right: 6px;
+}
+#size-M{
+	margin-right: 6px;
+}
+#size-L{
+	margin-right: 6px;
+}
