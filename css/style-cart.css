@@ -1244,3 +1244,88 @@ padding-right: 37px;
 
  
 
+
+/*Копка CLEAR SHOPPING CART*/
+.clear_box {
+	width: 235px;
+	height: 50px;
+	border: 1px solid #A4A4A4;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+		
+}
+
+
+
+.clear_box:hover {
+    box-shadow: 1px 2px 5px 1px rgb(0 0 0 / 20%);
+}
+
+.clear_box:active {
+background: #F16D7F;
+	color: #FFFFFF;
+}
+
+
+/*стиль кнопки CONTINUE SHOPPING*/
+.continue_box {
+	width: 235px;
+	height: 50px;
+	border: 1px solid #A4A4A4;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+}
+
+.continue_box:hover {
+    box-shadow: 1px 2px 5px 1px rgb(0 0 0 / 20%);
+}
+
+.continue_box:active {
+background: #F16D7F;
+	color: #FFFFFF;
+}
+
+/*цетровка слова внутри кнопки*/
+.box_text {
+	padding: 18px 0 0 40px;
+	box-sizing: border-box;
+}
+
+.cart_bottom {
+	
+	margin-top: 35px;
+	margin-bottom: 130px;
+}
+
+
+
+.clear_box1 {
+	width: 235px;
+	height: 50px;
+	border: 1px solid #A4A4A4;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+	
+}
+
+.clear_link {
+	text-decoration: none;
+}
+
+.clear_text {
+	padding: 18px 0 0 40px;
+	box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.cart_2box {
+	display: flex;
+	justify-content: space-between;
+	width: 650px;
+}
