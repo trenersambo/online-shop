@@ -34,80 +34,6 @@ body {
     margin-right: 33px;
 }
 
-/*скрыть 2иконки в Медиа1023.Видим в медиа767*/
-.header__icons_mob{
-	display: none;
-}
-
-/*Меню, кот.появл. при клике на Гамбургер*/
-.nav {
-	background-color: #fff;
-	padding: 16px 16px 32px 32px;
-	position: absolute;
-	top: 75px;
-	right: 0;
-	width: 232px;
-	 box-sizing: border-box;
-	transition: right .3s;
-
-}
-
-
-/*скрыл "checkbox", видим только ГАМБУРГЕР*/
-#switcher {
-	display: none;
-
-}
-
-/*Появл./исчезн. МЕНЮ от клика наГамбургер (ч/з id="switcher")*/
-	#switcher:checked ~ .nav{
-		right: -232px;
-		/*убрал прокрутку и фантомное поле справа*/
-		width: 0;
-		visibility: hidden;
-		display: none;
-	}
-
-/*стиль крестика в менюГамбургера*/
-.close_menu{
-	padding-left: 90%;
-}
-
-/*стили для слов в МенюГамбургера*/
-.nav__heading{
-margin-bottom: 25px;
-font-size: 16px;
-line-height: 18px;
-color: #000000;
-}
-
-.color-h3-menu{
-text-decoration: none;
-font-size: 16px;
-line-height: 19px;
-color: #F16D7F;
-}
-
-/*отступ м/у блоками MAN-WOMAN-KIDS*/
-.li_nodecor {
-	list-style-type: none;
-	margin-bottom: 20px;
-	}
-
-.nav__items{
-	margin-left: 20px;
-	list-style-type: none;
-}
-
-/*стиль для слов в подменю*/
-.li_nolink{
-text-decoration: none;
-font-size: 16px;
-line-height: 26px;
-color: #6F6E6E;
-}
-
-
 .promo {
     background: #F1E4E6;
     display: flex;
@@ -158,7 +84,6 @@ color: #6F6E6E;
     padding-bottom: 96px;
 }
 
-/*Картинки с текстом 30%off*/
 .sale__item {
     height: 260px;
     width: 360px;
@@ -167,24 +92,20 @@ color: #6F6E6E;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-	background-size: cover;
-	
 }
 
 .sale__item_1 {
-    background-image: url("../img/Group36.jpg");
+    background-image: url(../img/Group\ 36.jpg);
 	background-repeat: no-repeat;
-	margin-right: 20px;
 }
 
 .sale__item_2 {
-    background-image: url(../img/Group37.jpg);
+    background-image: url(../img/Group\ 37.jpg);
  background-repeat: no-repeat;
-	margin-right: 20px;
 }
 
 .sale__item_3 {
-    background-image: url(../img/Group38.jpg);
+    background-image: url(../img/Group\ 38.jpg);
 	background-repeat: no-repeat;
 }
 
@@ -193,9 +114,8 @@ color: #6F6E6E;
 justify-content: space-between;
 }
 
-/*стиль 4-й (длинной)картинки*/
 .sale__bottom {
-    background-image: url(../img/Group39.jpg);
+    background-image: url(../img/Group\ 39.jpg);
 	background-repeat: no-repeat;
     height: 180px;
     background-position: center;
@@ -204,7 +124,6 @@ justify-content: space-between;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-	background-size: cover;
 }
 
 .sale__text {
@@ -374,8 +293,7 @@ background-repeat: no-repeat;
 .product_blok_all {
 	display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
-	gap:30px;
+    justify-content: space-between;
 }
 
 
@@ -383,16 +301,17 @@ background-repeat: no-repeat;
 .button_browse_all {
 	text-decoration: none;
 	text-align: center;
-	margin-bottom: 95px;
+	/*margin-bottom: 95px;*/
 	font-size: 16px;
+	
 	line-height: 47px;
-	height: 45px;
-	border: 1px solid #EBEBEB;
+	height: 47px;
 	
+	 
+	border: 1px solid #FF6A6A;
+	width: 211px;
 	
-	/*центровка рамки ПАГИНАЦИИ страниц*/
-	margin: 0 auto 95px auto;
-	width: 283px;
+	margin: 0 auto 95px auto;/*центровка кнопки*/
 }
 
 .button_browse {
@@ -401,12 +320,12 @@ background-repeat: no-repeat;
 }
 
  /*стиль кнопки 'Browse All..'при наведении курсора*/
- .button_browse_all:hover{
+.button_browse_all:hover{
 	background-color: #F16D7F;
 	border: 1px solid #FF6A6A;
 	color: #FFFFFF;
 	
-} 
+}
 
 /*стиль кнопки 'Browse All..'при наведении курсора*/
 .button_browse_all:hover .button_browse{
@@ -418,7 +337,7 @@ color: #FFFFFF;
 
 /*футер 1-й уровень*/
 .footer_top {
-	/*height: 341px;*/
+	height: 341px;
 	background-color:#222224; 
 }
 
@@ -427,14 +346,11 @@ color: #FFFFFF;
 	display: flex;
 	justify-content: space-between;
 	flex-grow: 1;
-	padding-top: 103px;
-	padding-bottom: 104px;
-	box-sizing: border-box;
 }
 
 /*Стили для блока 'МАШИНА'(подвал-верхний)*/
 .footer_top_free {
-	/*height: 339px;*/
+	height: 339px;
 	width: 360px;
 	/*border: 1px solid #000;*/
 }
@@ -454,33 +370,32 @@ font-size: 14px;
 line-height: 17px;
 text-align: center;
 color: #FBFBFB;
- width: 330px;	
+	
 margin-top: 16px;
 }
 
 .free_img {
 	text-align: center;
-	/*margin-top: 103px;*/
+	margin-top: 103px;
 }
 
 /*блок с ПРОЦЕНТОМ*/
 .footer_top_sales {
-	/*height: 339px;*/
+	height: 339px;
 	width: 360px;
 	/*border: 1px solid #000;*/
 }
 
 /*блок с КОРОНОЙ*/
 .footer_top_quality {
-	/*height: 339px;*/
+	height: 339px;
 	width: 360px;
 	/*border: 1px solid #000;*/
 }
 
 /*Стили для СРЕДНЕГО БЕЛОГО футера*/
 .footer_middle_one {
-	/*height: 448px;*/
-	padding-bottom: 155px;
+	height: 448px;
 	background-image: url("../img/fon-middle.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -637,225 +552,3 @@ fill:#F16D7F;
 .soc_link_hover:hover .white-1{
 	fill:#FFFFFF;
 }
-
-/*Меда-запрос для экрана ДО 1023рх: start*/
-@media (max-width: 1023px){
-.center {
-	/* задает центровку блокам */
-    padding-left: calc(50% - 368px);
-    padding-right: calc(50% - 368px);
-}	
-
-	.promo__h1{
-		font-size: 37px;
-		line-height: 44px;
-	}
-	
-	 .promo__h2{
-		font-size: 24px;
-		line-height: 28px;
-	}
-
-	/*Для 768рх: 3 картинки*/
-	.sale__item {
-    height: 167px;
-    flex-grow: 1;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-	}
-	
-	/*Длинная картинка*/
-	.sale__bottom{
-	height: 116px;
-	}
-	
-	/*расстояние м/у img-карточками с товаром*/
-	.product_blok_all {
-	gap:16px;
-}
-	
-	/*стили для футера верхнего*/
-	.footer_top_one{
-		flex-direction: column;
-		align-items: center;
-		padding-top: 48px;
-		padding-bottom: 48px;
-	}
-	
-	.free_img {
-	text-align: center;
-	 
-}
-	.free_img_media{
-		padding-top: 48px;
-	}
-	
-	.footer_middle_one {
-	
-	flex-wrap: wrap;
-	}
-	
-}
-/*Меда-запрос для экрана ДО 1023рх: end*/
-
-
-/*Меда-запрос для экрана ДО 767рх: start*/
-
-@media (max-width: 767px) {
-  
-	.center {
-	/*расчет цетровки исходя из ширины экрана=425рх*/
-    padding-left: calc(50% - 212px);
-    padding-right: calc(50% - 212px);
-  }
-	
-  .header__icons:not(:last-child) {
-    margin-right: 8px;
-  }
-	
-	/*Показать  ГоловаКорзина в Медиа768*/
-  .header__icons_desc {
-    display: none;
-  }
-  .header__icons_mob {
-    display: block;
-	  padding-right: 30px;
-	  margin-bottom: 20px;
-  }
-	
-	/*Цвет svg-иконок в Меню*/
-	.icons_mob_color {
-	fill:#F16D7F;
-}
-	
-  .nav {
-    width: 100%;/*ширинаМеню*/
-    top: 0;
-    height: 100vh;/*ВысотаМеню*/
-  }
-  .nav__links-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content:flex-start;
-  }
-	
-	
-  #switcher:checked ~ .nav {
-    right:  -100%;
-  }
-	
-	/*стили розового блока THE BRAND*/	
-  .promo {
-    height: 363px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .promo__text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 0;
-  }
-	
-	/*Спрятал Чела_В_Аляске*/
-  .promo__img {
-    display: none;
-  }
-	
-  .sale {
-    padding-bottom: 64px;
-  }
-  .sale__top {
-	  display: flex;
-    flex-direction: column;
-	  align-items: center;
-	  
-	/*отступы м/у картинками в колонке*/
-    /*row-gap: 32px;*/
-  }
-	
-  .sale__item {
-    height: 247px;
-  }
-	
-	/*отступы м/у картинками в колонке*/
-	.sale__item_1{
-		margin-bottom: 32px;
-	}
-	.sale__item_2{
-		margin-bottom: 32px;
-	}
-	/*Поправка положения -18рх!*/
-	.sale__item_3{
-		margin-left: -18px;
-	}
-	
-  .sale__bottom {
-    height: 111px;
-    margin-top: 32px;
-	width: 360px;
-	  
-	  /*Поправка положения +24рх!*/
-	  margin-left: 24px;
-  }
-	
-  .footer_top_one {
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-	
-	
-	.bottom_one_left {
- 	margin-left: 0px;
-		margin-bottom: 10px;
-	 	}
-	.bottom_one_right{
-		margin-top: 43px;
-	}
-	
-.footer_bottom_one {
- height: 143px;
-display: flex;
-	/*Реверс для AllRigts и ИконкиСоцСетей*/
-flex-direction: column-reverse;
-	align-items: center;
-}
-	
-	
-}
-/*Меда-запрос для экрана ДО 767рх: end*/
-
-
-@media (max-width: 425px) {
-	
-  .center {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-	
-	.sale__bottom{
-	margin-left: 0px;
-	}
-	
-	
-}
-
-
-
-
