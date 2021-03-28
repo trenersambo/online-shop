@@ -190,7 +190,7 @@ color: #6F6E6E;
 
 .sale__top {
  display: flex;
-justify-content: space-between;
+justify-content: space-around;
 }
 
 /*стиль 4-й (длинной)картинки*/
@@ -612,7 +612,7 @@ display: flex;
 /*центровка 'BrandAllRight..' от верха+слева*/
 .bottom_one_left {
 margin-top: 30px;
-margin-left: 150px;
+margin-left: 0px;
 box-sizing: border-box;
 }
 
@@ -676,6 +676,10 @@ fill:#F16D7F;
 	.product_blok_all {
 	gap:16px;
 }
+	.product_blok {
+  
+  margin-bottom: 8px;
+	}
 	
 	/*стили для футера верхнего*/
 	.footer_top_one{
