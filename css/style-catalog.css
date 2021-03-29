@@ -32,6 +32,9 @@ body {
 	width: 232px;
 	 box-sizing: border-box;
 	transition: right .3s;
+	
+	/*!!меню поверх остальных блоков!!*/
+	z-index: 2;
 
 }
 
