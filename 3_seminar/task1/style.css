@@ -1,0 +1,59 @@
+*{
+box-sizing: border-box;
+}
+
+.wrapper{
+width: 500px;
+background-color: #f4f4f4;
+border: 1px solid #969696;
+border-radius: 5px;
+margin: 20px auto;
+padding: 25px 0;
+
+}
+
+.img_top{
+width: 99.9%;
+}
+
+h1{
+text-align: center;
+}
+
+.inputCels,
+.outputFar{
+font-size: 22px;
+padding: 0 10px;
+}
+
+.celsGrade{
+height: 42px;
+border: 2px solid #626161;
+border-radius: 6px;
+margin: 10px;
+font-size: 22px;
+padding: 0 15px;
+}
+
+.btnConv{
+width: 250px;
+margin: 25px;
+padding: 16px;
+font-size: 28px;
+border-radius: 6px;
+}
+
+.btnConv:hover{
+box-shadow: 3px 0px 16px 0px #626161;
+
+}
+
+.wrapp_output{
+height: 150px;
+padding: 8px 20px;
+margin: 0 15px;
+font-size: 25px;
+color: #f4f4f4;
+background: #000;
+border-radius: 5px;
+}
