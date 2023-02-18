@@ -1,2 +1,1 @@
-# pro-verstka-git
-Курс Профверстка (03.2021)
+ ![Логотип C#](task1/logoC.jpg)
