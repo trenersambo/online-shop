@@ -1,0 +1,12 @@
+{
+    "user": {
+        "fullname": {
+            "firstname": "Иван",
+            "middlename": "Иванович",
+            "lastname": "Иванов"
+        },
+        "age": 30,
+        "phone": "+79267664848",
+        "city": "Москва"
+    }
+}
