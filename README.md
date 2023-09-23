@@ -1,2 +1,4 @@
+https://trenersambo.github.io/online-shop
+
 # pro-verstka-git
-Курс Профверстка (03.2021)
+Изучение Профверстки (03.2021) на примере магазина
